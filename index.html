@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTalk</title>
+  <!-- favicon -->
+  <link
+    rel="shortcut icon"
+    href="assets/img/youtalk-logo/youtalk (2).png"
+    type="image/x-icon"
+  />
+  <!-- bootsrap link -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- fontwesome link -->
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+<!-- lightslider link -->
+  <link rel="stylesheet" href="assets/css/lightslider.css">
+  <!-- main link -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+        <!-- ===================== header content ========================= -->
+    <header class="header">
+      <!-- ===================== top header ========================= --> 
+      <nav class="navbar navbar-expand-lg px-3 top-header">
+        <div class="container-fluid">
+            <!-- ===================== left side icon bar header ========================= --> 
+          <div class="icon-bar-top">
+            <a
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasScrolling"
+              aria-controls="offcanvasScrolling"
+              ><i class="fa-solid fa-bars bar"></i></a>
+            </div>
+            
+        <!-- ===================== sidebar offcanvas content ========================= -->
+        <div class="offcanvas offcanvas-start"
+        data-bs-scroll="true"
+        data-bs-backdrop="false"
+      tabindex="-1"
+    id="offcanvasScrolling"
+    aria-labelledby="offcanvasScrollingLabel"
+>
+  <div class="offcanvas-header">
+    <a
+      type="button"
+      class="text-reset close-btn"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+      ><i class="fa-solid fa-bars bar"></i
+    ></a>
+    <a class="offcanvas-title navbar-brand" id="offcanvasExampleLabel">
+      <img
+        src="assets/img/youtalk-logo/youtalk (2).png"
+        alt="logo image"
+        class="logo-img"
+      />
+      YouTalk
+    </a>
+  </div>
+  <!-- =====================offcanvas-body========================= -->
+      <div class="offcanvas-body" data-bs-spy="scroll">
+        <div class="menu">
+          <a href="" class="active nav-menu nav-link">
+            <i class="fa-solid fa-house-chimney"></i>
+            <h3 class="menu-title">Home</h3>
+          </a>
+          <a href="" class="nav-menu nav-link">
+            <i class="fa-regular fa-compass"></i>
+            <h3 class="menu-title">Explorer</h3>
+          </a>
+          <a href="" class="nav-menu nav-link">
+            <i class="fa-regular fa-circle-play"></i>
+            <h3 class="menu-title">Shorts</h3>
+          </a>
+          <a href="" class="nav-menu nav-link">
+            <i class="fa-solid fa-photo-film"></i>
+            <h3 class="menu-title">Subcription</h3>
+          </a>
+          <hr>
+          <a href="" class="nav-menu nav-link">
+            <i class="fa-solid fa-film"></i>
+            <h3 class="menu-title">Library</h3>
+          </a>
+          <a href="" class="nav-menu nav-link">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <h3 class="menu-title">History</h3>
+          </a>
+          <a href="" class="nav-menu nav-link">
+            <i class="fa-regular fa-square-caret-left"></i>
+            <h3 class="menu-title">Your Videos</h3>
+          </a>
+          <a href="" class="nav-menu nav-link">
+            <i class="fa-regular fa-clock"></i>
+            <h3 class="menu-title">Watch Later</h3>
+          </a>
+          <a href="" class="nav-menu nav-link">
+            <i class="fa-regular fa-thumbs-up"></i>
+            <h3 class="menu-title">Liked Videos</h3>
+          </a>
+          <a href="" class="nav-menu nav-link show-more">
+            <i class="fa-solid fa-angle-down"></i>
+            <h3 class="menu-title">Show More</h3>
+          </a>
+          <hr>
+          <div class="sub-channel item">
+            <h2>SUBSCRIPTIONS</h2>
+            <a href="" class="nav-menu nav-link">
+            <img src="assets/img/sub-channel/profile (1).jpg" alt="Channel image" class="channel-img">
+            <h3 class="menu-title">Channel Nam..</h3>
+          </a>
+          <a href="" class="nav-menu nav-link">
+            <img src="assets/img/sub-channel/profile (1).png" alt="Channel image" class="channel-img">
+            <h3 class="menu-title">Matheus...</h3>
+          </a>
+          <a href="" class="nav-menu nav-link">
+            <img src="assets/img/sub-channel/profile (2).jpg" alt="Channel image" class="channel-img">
+            <h3 class="menu-title">Channel Name</h3>
+          </a>
+          <a href="" class="nav-menu nav-link">
+            <img src="assets/img/sub-channel/profile (6).png" alt="Channel image" class="channel-img">
+            <h3 class="menu-title">Channel Name</h3>
+          </a>
+          <a href="" class="nav-menu nav-link">
+            <img src="assets/img/sub-channel/profile (5).jpg" alt="Channel image" class="channel-img">
+            <h3 class="menu-title">Channel Name</h3>
+          </a>
+          </div>
+          <hr>
+          <div class="ex-channel item">
+            <h2>EXPLORE</h2>
+            <a href="" class="nav-menu nav-link">
+              <i class="fa-solid fa-gamepad"></i>
+              <h3 class="menu-title">Gaming</h3>
+            </a>
+            <a href="" class="nav-menu nav-link">
+              <i class="fa-solid fa-trophy"></i>
+              <h3 class="menu-title">Sports</h3>
+            </a>
+          </div>
+          <hr>
+          <div class="more-channel item">
+            <h2>MORE FROM YOUTALK</h2>
+            <a href="" class="nav-menu nav-link">
+            <img src="assets/img/youtalk-logo/youtalk (1).png" alt="Channel image" class="channel">
+            <h3 class="menu-title">Create Studio</h3>
+          </a>
+          <a href="" class="nav-menu nav-link">
+            <img src="assets/img/youtalk-logo/youtalk (2).png" alt="Channel image" class="channel">
+            <h3 class="menu-title">Youtalk Music</h3>
+          </a>
+          <a href="" class="nav-menu nav-link">
+            <img src="assets/img/youtalk-logo/youtalk (3).png" alt="Channel image" class="channel">
+            <h3 class="menu-title">YouTalk Kids</h3>
+          </a>
+          <a href="" class="nav-menu nav-link">
+            <img src="assets/img/youtalk-logo/video.png" alt="Channel image" class="channel">
+            <h3 class="menu-title">YouTalk TV</h3>
+          </a>
+          </div>
+          <hr>
+          <a href="" class="nav-menu nav-link">
+            <i class="fa-solid fa-gears"></i>
+            <h3 class="menu-title">Settings</h3>
+          </a>
+          <a href="" class="nav-menu nav-link">
+            <i class="fa-solid fa-font-awesome"></i>
+            <h3 class="menu-title">Report history</h3>
+          </a>
+          <a href="" class="nav-menu nav-link">
+            <i class="fa-regular fa-circle-question"></i>
+            <h3 class="menu-title">Help</h3>
+          </a>
+          <a href="" class="nav-menu nav-link">
+            <i class="fa-solid fa-heart-circle-exclamation"></i>
+            <h3 class="menu-title">Send Feedback</h3>
+          </a>
+          <hr>
+          <div class="sidebar-buttom-menu">
+            <a href="" class="buttom-menu nav-link">About</a>
+            <a href="" class="buttom-menu nav-link">Press</a>
+            <a href="" class="buttom-menu nav-link">Copyright</a>
+            <a href="" class="buttom-menu nav-link">Contact us</a>
+            <a href="" class="buttom-menu nav-link">Creators</a>
+            <a href="" class="buttom-menu nav-link">Advertise</a>
+            <a href="" class="buttom-menu nav-link">Developers</a>
+          </div>
+          <div class="sidebar-buttom-menu">
+            <a href="" class="buttom-menu nav-link">Terms Privacy policy & Safety. Lorem, ipsum dolor.</a>
+            <p class="my-2">&copy; 2022 Youtalk Website</p>
+          </div>
+        </div>
+        </div>
+          </div>
+    <!-- ===================== top header content ========================= --> 
+            <div><a a class="navbar-brand" href="#">
+              <img src="assets/img/youtalk-logo/youtalk (2).png"
+                alt="logo image"
+                class="logo-img"
+              />
+              YouTalk
+            </a>
+          </div>
+          <div class="collapse navbar-collapse">
+            <form class="d-flex nav-form">
+              <input class="form-control ms-auto control" type="search" placeholder="Search" aria-label="Search">
+              <button class=" form-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div class="navbar-nav ms-auto mb-lg-0 d-flex align-items-center right-side d-flex align-items-center">
+              <a class="right-side-icon" data-bs-toggle="tooltip" title="Create">
+                <i class="fa-solid fa-video"></i>
+              </a>
+              <a  class=" position-relative right-side-icon" data-bs-toggle="tooltip" title="Notification">
+                <i class="fa-regular fa-bell"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">9+
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </a>
+                <a class="nav-link user-profile" href="#">
+                  <img src="assets/img/sub-channel/profile (2).jpg" alt="Channel image" class="user-img">
+                </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <hr class="hr_style">
+        <!-- ===================== top header end ========================= --> 
+      <!-- ===================== bottom navbar ========================= -->
+      <nav class="navbar navbar-expand-lg buttom-nav container-fluid"  aria-label="Page navigation example">
+          <ul class="navbar-nav ms-auto  mb-lg-0 d-flex align-items-center carousel-content" id="carouselContent">
+            <li class="nav-item">
+              <a class="nav-link active-item" href="#">All</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cetagory</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Natok</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Songs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Action</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Website</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Html</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PHP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Serise</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gojol</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">java</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Songs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cetagory</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Songs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cetagory</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Songs</a>
+            </li>
+          </ul>
+          <div class="controls">
+            <button class="left-btn buttom-header-btn" id="carouseleftBtn">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+             <button class="right-btn buttom-header-btn show" id="carouserightBtn"> 
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+      </nav>
+      <hr class="hr_style">
+      <!-- ===================== bottom navbar end ========================= -->
+
+ <!-- =====================SIDEBAR========================= -->
+      <aside class="aside-bar">
+        <!-- ===================== fixed sidebar ========================= -->
+        <div class="sidebar"> 
+          <div class="menu-asibe">
+          <a href="" class="nav-link">
+            <i class="fa-solid fa-house-chimney"></i>
+            <h3 class="sidebar-title">Home</h3>
+          </a>
+          <a href="" class="nav-link">
+            <i class="fa-regular fa-compass"></i>
+            <h3 class="sidebar-title">Explorer</h3>
+          </a>
+          <a href="" class="nav-link">
+            <i class="fa-regular fa-circle-play"></i>
+            <h3 class="sidebar-title">Shorts</h3>
+          </a>
+          <a href="" class="nav-link">
+            <i class="fa-solid fa-photo-film"></i>
+            <h3 class="sidebar-title">Subcription</h3>
+          </a>
+          <a href="" class="nav-link">
+            <i class="fa-solid fa-film"></i>
+            <h3 class="sidebar-title">Library</h3>
+          </a>
+        <!-- dark theme button -->
+        <div id="icons">
+          <i class="fa-solid fa-moon dark-theme-icon" id="icon"></i>
+        </div>
+        </div>
+
+        </div>
+      </aside>
+      <!-- =====================SIDEBAR END========================= -->
+    </header>
+
+   
+
+  <!-- ===================== main content ========================= --> 
+  <main class="main-container p-2">
+    <section class="container-fluid">
+    <div class="banner">
+    <div class="row ms-3 mb-4">
+      <div class="col-sm-3">
+        <div class="card">
+          <img src="assets/img/all-img/banner (1).jpg" class="card-img-top" alt="card image">
+          <div class="card-body d-flex">
+            <img src="assets/img/sub-channel/profile (3).jpg" alt="profile" class="user-img">
+            <div class="card-content">
+              <h5 class="card-title">Lorem ipsum dolor sit, amet consectetur....</h5>
+              <p class="card-text">Channel Name <i class="fa-solid fa-circle-check"></i></p>
+              <a href="#" class="link">
+              15K views . 1 hour ago
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <img src="assets/img/all-img/banner (14).jpg" class="card-img-top" alt="card image">
+          <div class="card-body d-flex">
+            <img src="assets/img/sub-channel/profile (1).png" alt="profile" class="user-img">
+            <div class="card-content">
+              <h5 class="card-title">Lorem ipsum dolor sit Lorem ipsum.</h5>
+              <p class="card-text">Channel Name <i class="fa-solid fa-circle-check"></i></p>
+              <a href="#" class="link">
+              15K views . 1 hour ago
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <img src="assets/img/all-img/banner (6).jpg" class="card-img-top" alt="card image">
+          <div class="card-body d-flex">
+            <img src="assets/img/sub-channel/profile (2).jpg" alt="profile" class="user-img">
+            <div class="card-content">
+              <h5 class="card-title">Lorem ipsum dolor sit, amet consectetur....</h5>
+              <p class="card-text">Channel Name <i class="fa-solid fa-circle-check"></i></p>
+              <a href="#" class="link">
+              15K views . 1 hour ago
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <img src="assets/img/all-img/banner (11).jpg" class="card-img-top" alt="card image">
+          <div class="card-body d-flex">
+            <img src="assets/img/sub-channel/profile (1).jpg" alt="profile" class="user-img">
+            <div class="card-content">
+              <h5 class="card-title">Lorem ipsum dolor sit, amet consectetur....</h5>
+              <p class="card-text">Channel Name <i class="fa-solid fa-circle-check"></i></p>
+              <a href="#" class="link">
+              15K views . 1 hour ago
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row ms-3">
+      <div class="col-sm-3">
+        <div class="card">
+          <img src="assets/img/all-img/banner (10).jpg" class="card-img-top" alt="card image">
+          <div class="card-body d-flex">
+            <img src="assets/img/sub-channel/profile (4).png" alt="profile" class="user-img">
+            <div class="card-content">
+              <h5 class="card-title">Lorem ipsum dolor sit, amet consectetur....</h5>
+              <p class="card-text">Channel Name <i class="fa-solid fa-circle-check"></i></p>
+              <a href="#" class="link">
+              15K views . 1 hour ago
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <img src="assets/img/all-img/banner (4).jpg" class="card-img-top" alt="card image">
+          <div class="card-body d-flex">
+            <img src="assets/img/sub-channel/profile (5).png" alt="profile" class="user-img">
+            <div class="card-content">
+              <h5 class="card-title">Lorem ipsum dolor sit Lorem ipsum.</h5>
+              <p class="card-text">Channel Name <i class="fa-solid fa-circle-check"></i></p>
+              <a href="#" class="link">
+              15K views . 1 hour ago
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <img src="assets/img/all-img/banner (12).jpg" class="card-img-top" alt="card image">
+          <div class="card-body d-flex">
+            <img src="assets/img/sub-channel/profile (3).jpg" alt="profile" class="user-img">
+            <div class="card-content">
+              <h5 class="card-title">Lorem ipsum dolor sit, amet consectetur....</h5>
+              <p class="card-text">Channel Name <i class="fa-solid fa-circle-check"></i></p>
+              <a href="#" class="link">
+              15K views . 1 hour ago
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <img src="assets/img/all-img/banner (2).jpg" class="card-img-top" alt="card image">
+          <div class="card-body d-flex">
+            <img src="assets/img/sub-channel/profile (5).jpg" alt="profile" class="user-img">
+            <div class="card-content">
+              <h5 class="card-title">Lorem ipsum dolor sit, amet consectetur....</h5>
+              <p class="card-text">Channel Name <i class="fa-solid fa-circle-check"></i></p>
+              <a href="#" class="link">
+              15K views . 1 hour ago
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class=" border-bottom mt-5">
+    </div>
+    </div>
+    </section>
+    <section class="container-fluid">
+      <div class="short-top container d-flex align-items-center justify-content-between">
+        <a href="" class="short-logo d-flex align-items-center">
+          <i class="fa-regular fa-circle-play"></i>
+          <h3 class="short-logo-title ms-2 mt-1">Shorts</h3>
+        </a>
+        <i type="button" class="btn-close" aria-label="Close"></i>
+      </div>
+      <div class="shorts">
+        
+        <div class="row mb-3" id="light-slider">
+          <div class="col-sm-2">
+            <div class="card">
+              <img src="assets/img/all-img/shorts/shorts (5).jpg" class="card-img-top shorts-video" alt="card image">
+              <div class="card-body">
+                <div class="card-content">
+                  <h5 class="card-title">Lorem ipsum dolor sit, amet consectetur....</h5>
+                  <a href="#" class="link">
+                  45K views
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card">
+              <img src="assets/img/all-img/shorts/shorts (7).jpg" class="card-img-top shorts-video" alt="card image">
+              <div class="card-body">
+                <div class="card-content">
+                  <h5 class="card-title">Lorem dolor amet consectetur....</h5>
+                  <a href="#" class="link">
+                  45K views
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card">
+              <img src="assets/img/all-img/shorts/shorts (3).jpg" class="card-img-top shorts-video" alt="card image">
+              <div class="card-body">
+                <div class="card-content">
+                  <h5 class="card-title">Lorem ipsum dolor sit, amet consectetur....</h5>
+                  <a href="#" class="link">
+                  45K views
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card">
+              <img src="assets/img/all-img/shorts/shorts (8).jpg" class="card-img-top shorts-video" alt="card image">
+              <div class="card-body">
+                <div class="card-content">
+                  <h5 class="card-title">Lorem ipsum dolor sit</h5>
+                  <a href="#" class="link">
+                  45K views
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card">
+              <img src="assets/img/all-img/shorts/shorts (2).jpg" class="card-img-top shorts-video" alt="card image">
+              <div class="card-body">
+                <div class="card-content">
+                  <h5 class="card-title">Lorem ipsum dolor sit consectetur....</h5>
+                  <a href="#" class="link">
+                  45K views
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card">
+              <img src="assets/img/all-img/shorts/shorts (1).jpg" class="card-img-top shorts-video" alt="card image">
+              <div class="card-body">
+                <div class="card-content">
+                  <h5 class="card-title">Lorem ipsum dolor sit, amerf.</h5>
+                  <a href="#" class="link">
+                  45K views
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card">
+              <img src="assets/img/all-img/shorts/shorts (8).jpg" class="card-img-top shorts-video" alt="card image">
+              <div class="card-body">
+                <div class="card-content">
+                  <h5 class="card-title">Lorem ipsum dolor sit</h5>
+                  <a href="#" class="link">
+                  45K views
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card">
+              <img src="assets/img/all-img/shorts/shorts (2).jpg" class="card-img-top shorts-video" alt="card image">
+              <div class="card-body">
+                <div class="card-content">
+                  <h5 class="card-title">Lorem ipsum dolor sit consectetur....</h5>
+                  <a href="#" class="link">
+                  45K views
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card">
+              <img src="assets/img/all-img/shorts/shorts (1).jpg" class="card-img-top shorts-video" alt="card image">
+              <div class="card-body">
+                <div class="card-content">
+                  <h5 class="card-title">Lorem ipsum dolor sit, amerf.</h5>
+                  <a href="#" class="link">
+                  45K views
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      
+      <a href="" class="nav-menu nav-link short-show-more justify-content-center">
+        <i class="fa-solid fa-angle-down"></i>
+      </a>
+    </div>
+    </section>
+    <section class="container-fluid">
+      <div class="banner">
+      <div class="row ms-3 mb-4 pt-4 ">
+        <div class="col-sm-3">
+          <div class="card">
+            <img src="assets/img/all-img/banner (10).jpg" class="card-img-top" alt="card image">
+            <div class="card-body d-flex">
+              <img src="assets/img/sub-channel/profile (2).jpg" alt="profile" class="user-img">
+              <div class="card-content">
+                <h5 class="card-title">Lorem ipsum dolor sit, amet consectetur....</h5>
+                <p class="card-text">Channel Name <i class="fa-solid fa-circle-check"></i></p>
+                <a href="#" class="link">
+                15K views . 1 hour ago
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <img src="assets/img/all-img/banner (14).jpg" class="card-img-top" alt="card image">
+            <div class="card-body d-flex">
+              <img src="assets/img/sub-channel/profile (2).png" alt="profile" class="user-img">
+              <div class="card-content">
+                <h5 class="card-title">Lorem ipsum dolor sit Lorem ipsum.</h5>
+                <p class="card-text">Channel Name <i class="fa-solid fa-circle-check"></i></p>
+                <a href="#" class="link">
+                15K views . 1 hour ago
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <img src="assets/img/all-img/banner (4).jpg" class="card-img-top" alt="card image">
+            <div class="card-body d-flex">
+              <img src="assets/img/sub-channel/profile (3).jpg" alt="profile" class="user-img">
+              <div class="card-content">
+                <h5 class="card-title">Lorem ipsum dolor sit, amet consectetur....</h5>
+                <p class="card-text">Channel Name <i class="fa-solid fa-circle-check"></i></p>
+                <a href="#" class="link">
+                15K views . 1 hour ago
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <img src="assets/img/all-img/banner (13).jpg" class="card-img-top" alt="card image">
+            <div class="card-body d-flex">
+              <img src="assets/img/sub-channel/profile (4).png" alt="profile" class="user-img">
+              <div class="card-content">
+                <h5 class="card-title">Lorem ipsum dolor sit, amet consectetur....</h5>
+                <p class="card-text">Channel Name <i class="fa-solid fa-circle-check"></i></p>
+                <a href="#" class="link">
+                15K views . 1 hour ago
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row ms-3  pb-4">
+        <div class="col-sm-3">
+          <div class="card">
+            <img src="assets/img/all-img/banner (12).jpg" class="card-img-top" alt="card image">
+            <div class="card-body d-flex">
+              <img src="assets/img/sub-channel/profile (5).png" alt="profile" class="user-img">
+              <div class="card-content">
+                <h5 class="card-title">Lorem ipsum dolor sit, amet consectetur....</h5>
+                <p class="card-text">Channel Name <i class="fa-solid fa-circle-check"></i></p>
+                <a href="#" class="link">
+                15K views . 1 hour ago
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <img src="assets/img/all-img/banner (1).jpg" class="card-img-top" alt="card image">
+            <div class="card-body d-flex">
+              <img src="assets/img/sub-channel/profile (3).jpg" alt="profile" class="user-img">
+              <div class="card-content">
+                <h5 class="card-title">Lorem ipsum dolor sit Lorem ipsum.</h5>
+                <p class="card-text">Channel Name <i class="fa-solid fa-circle-check"></i></p>
+                <a href="#" class="link">
+                15K views . 1 hour ago
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <img src="assets/img/all-img/banner (11).jpg" class="card-img-top" alt="card image">
+            <div class="card-body d-flex">
+              <img src="assets/img/sub-channel/profile (4).png" alt="profile" class="user-img">
+              <div class="card-content">
+                <h5 class="card-title">Lorem ipsum dolor sit, amet consectetur....</h5>
+                <p class="card-text">Channel Name <i class="fa-solid fa-circle-check"></i></p>
+                <a href="#" class="link">
+                15K views . 1 hour ago
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <img src="assets/img/all-img/banner (4).jpg" class="card-img-top" alt="card image">
+            <div class="card-body d-flex">
+              <img src="assets/img/sub-channel/profile (1).jpg" alt="profile" class="user-img">
+              <div class="card-content">
+                <h5 class="card-title">Lorem ipsum dolor sit, amet consectetur....</h5>
+                <p class="card-text">Channel Name <i class="fa-solid fa-circle-check"></i></p>
+                <a href="#" class="link">
+                15K views . 1 hour ago
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main> 
+   
+  <footer>
+    <aside class="footer-bar">
+      <!-- ===================== fixed buttom bar ========================= -->
+      <div class="buttombar">
+  
+          <!-- ===================== sidebar offcanvas content ========================= -->
+          
+        <div class="menu-asibe">
+        <a href="" class="nav-link">
+          <i class="fa-solid fa-house-chimney"></i>
+          <h3 class="sidebar-title">Home</h3>
+        </a>
+        <a href="" class="nav-link">
+          <i class="fa-regular fa-compass"></i>
+          <h3 class="sidebar-title">Explorer</h3>
+        </a>
+        <a href="" class="nav-link">
+          <i class="fa-regular fa-circle-play"></i>
+          <h3 class="sidebar-title">Shorts</h3>
+        </a>
+        <a href="" class="nav-link">
+          <i class="fa-solid fa-photo-film"></i>
+          <h3 class="sidebar-title">Subcription</h3>
+        </a>
+        <a href="" class="nav-link">
+          <i class="fa-solid fa-film"></i>
+          <h3 class="sidebar-title">Library</h3>
+        </a>
+         <!-- dark theme button -->
+         <a id="icons nav-link">
+          <i class="fa-solid fa-moon dark-theme-icon" id="icon-footer"></i>
+        </a>
+      </div>
+      </div>
+    </aside>
+  </footer>
+    <!-- jquery js link-->
+  <script src="assets/js/jquery-3.6.1.min.js"></script>
+  <!-- main js -->
+  <script src="assets/js/index.js"></script>
+
+  <!-- lightslider js -->
+  <script src="assets/js/lightslider.js"></script>
+  <!-- boostrap js -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
